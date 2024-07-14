@@ -1,0 +1,121 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    background-image: url('pic.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Fix the image */
+    background-repeat: no-repeat;
+}
+
+.container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+   /* background-color: rgba(255, 255, 255, 0.8);  Add a semi-transparent background to make the content more readable */
+}
+
+video {
+    width: 100%;
+    max-width: 640px;
+    height: auto;
+    border: 1px solid black;
+}
+
+canvas {
+    display: none;
+}
+
+.photos-container {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.photos-container img {
+    border: 1px solid black;
+    max-width: 150px;
+    height: auto;
+}
+
+/* Navbar Styles */
+header {
+    background-color: rgba(51, 51, 51, 0.8); /* Semi-transparent to see background image */
+    padding: 10px 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+    font-size: 24px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: rgba(51, 51, 51, 0.8); /* Semi-transparent to see background image */
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+    }
+
+    .nav-links li {
+        margin: 0;
+        padding: 10px 0;
+    }
+
+    .burger {
+        display: flex;
+    }
+}
+
+.nav-active {
+    display: flex;
+}
